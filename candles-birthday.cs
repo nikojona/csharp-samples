@@ -24,6 +24,7 @@ class Result
 
     public static int birthdayCakeCandles(List<int> candles)
     {
+        candles.Sort();
         candles.Reverse();
         int a = candles[0];
         int b = 0;
