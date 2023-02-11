@@ -25,18 +25,16 @@ class Result
     public static int birthdayCakeCandles(List<int> candles)
     {
         candles.Reverse();
-        int a = candles.Count - 1;
-        int b = candles[a];
-        int c = 0;
+        int a = candles[0];
+        int b = 0;
         foreach(int candle in candles)
         {
-            if(b == candle)
+            if(a == candle)
             {
-                c += 1;
+                b += 1;
             }
-            
         }
-        return c;
+        return b;
     }
 
 }
