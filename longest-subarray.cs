@@ -51,7 +51,7 @@ class Result
             max = Math.Max(max,j-i);
             numbers.Clear();
         }
-        Console.WriteLine(max);
+        return max;
     }
 }
 
